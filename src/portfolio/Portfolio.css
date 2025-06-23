@@ -1,0 +1,83 @@
+/* Portfolio.css */
+
+/* Existing keyframes for typing and blinking effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+/* Increase card width for larger screens */
+
+/* Responsive Styles for smaller screens */
+@media (max-width: 768px) {
+  .MuiBox-root {
+    height: auto;  /* Allow the height to auto adjust on smaller screens */
+    padding: 16px;  /* Add some padding for smaller screens */
+  }
+
+  .MuiTypography-root {
+    font-size: 2rem;  /* Make the name font size smaller */
+  }
+
+  .MuiTypography-root:nth-child(2) {  /* Title Typography */
+    font-size: 1rem;  /* Reduce the title size for smaller screens */
+  }
+
+  .MuiButton-root {
+    padding: 10px 20px;  /* Reduce button padding */
+    font-size: 1rem;  /* Adjust font size of button */
+  }
+
+  .MuiPaper-root {
+    padding: 10px;  /* Adjust paper padding */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);  /* Adjust box-shadow for smaller screen */
+  }
+}
+
+@media (max-width: 480px) {
+  .MuiTypography-root {
+    font-size: 0.1rem;  /* Further reduce the name font size */
+  }
+
+  .MuiTypography-root:nth-child(2) {  /* Title Typography */
+    font-size: 1rem;  /* Further reduce the title font size */
+  }
+
+  .MuiButton-root {
+    padding: 8px 20px;  /* Smaller padding for button */
+    font-size: 0.9rem;  /* Further reduce font size for button */
+  }
+
+  .MuiPaper-root {
+    padding: 12px;  /* Even smaller padding */
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);  /* Lighter shadow for mobile */
+  }
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9) translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}

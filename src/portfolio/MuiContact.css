@@ -1,0 +1,144 @@
+html, body {
+    height: 100%; /* Ensure the full height is used */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+    background-color: #470439; /* Existing background color */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Keep the content aligned at the top */
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px; /* Optional: Limit the width for better layout */
+    padding-top: 50px; /* Add top padding to avoid cut off at the top */
+}
+
+
+.contact-form {
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 1rem; /* Adjust margin for mobile */
+    background-color: #d6d2fd;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Use full width on mobile */
+    max-width: 600px; /* Set a max-width for larger screens */
+    min-height: 250px; /* Adjust as needed for overall height */
+}
+
+.contact-image img {
+    width: 100%; /* Use full width on mobile */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+}
+
+.contact-form h2 {
+    color: #470439;
+    font-size: 2em; /* Keep original font size */
+    text-align: center;
+    margin: 6px; /* Keep original margin */
+}
+
+.social-media {
+    margin-top: 2%; /* Position 2% below the contact form */
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%; /* Ensure it spans across */
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.social-media li {
+    margin: 0 10px;
+}
+
+.social-media img {
+    width: 40px; /* Keep original size for larger screens */
+    margin-right: 8px;
+    margin-bottom: -10px;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #f7f0f5;
+    font-size: large;
+}
+@media (max-width: 900px) {
+  html, body {
+    height: auto;
+    
+      overflow-y: auto !important;  /* Force scroll */
+    display: block !important;    
+  }
+
+  .contact-container {
+    display: flex;
+    /* Reverse for: social → form → image */
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .contact-image {
+  
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .contact-image img {
+    width: 80%;
+      order: 1;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .contact-form {
+    order: 3;
+    width: 80%;
+    margin: 20px auto;
+    margin-top: 20%;
+  }
+
+  .social-media {
+    order: 2;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-media ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .social-media li {
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
+  .social-media img {
+    width: 30px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+
+  .social-media a {
+    font-size: 16px;
+    color: #f7f0f5;
+    text-decoration: none;
+  }
+}

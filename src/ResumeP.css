@@ -1,0 +1,82 @@
+
+  
+  .download-btn,
+  .demo-btn {
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #ff6f61;
+    color: rgb(49, 5, 46);
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  #qr{
+    width: 19%;
+    margin-top: 10;
+  }
+  .resume-demo {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+  
+  embed {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .resume-page {
+    background-size: cover; /* Ensure image covers the entire background */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    min-height: 98vh; /* Make sure the div covers the full height of the viewport */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 99.3vw; /* Full width of the viewport */
+  }
+  
+  .resume-page h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    margin: 10px;
+    
+    font-size: 1rem;
+    background-color: rgba(225, 241, 8, 0.7); /* Slightly transparent background */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #ff6e61 ; /* Light hover effect */
+    color: #faf6f9;
+    font-weight: 600;
+    transform: scale(1.05);
+  }
+  
+
+@media (max-width: 768px) {
+    #qr {
+        width: 10%; /* Larger size for medium screens */
+    }
+    .download-btn {
+        padding: 10px 15px; /* Adjust button padding */
+        font-size: 14px; /* Adjust button font size */
+    }
+}
+
+@media (max-width: 480px) {
+    #qr {
+        width: 60%; /* Larger size for small screens */
+    }
+    .download-btn {
+        padding: 8px 12px; /* Adjust button padding */
+        font-size: 12px; /* Adjust button font size */
+    }
+}
