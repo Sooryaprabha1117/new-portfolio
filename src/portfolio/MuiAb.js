@@ -1,15 +1,20 @@
 import React from 'react';
 import { Avatar, Box, Typography } from '@mui/material';
 import DP from "./Assets/1.png";
-import logo1 from '../portfolio/Assets/redux1.png';
-import logo2 from '../portfolio/Assets/REACT.png';
-import logo3 from '../portfolio/Assets/css.png';
-import logo4 from '../portfolio/Assets/JAVASCRIPT.png';
-import logo5 from '../portfolio/Assets/html.png';
-import logo6 from '../portfolio/Assets/sass.png';
-import logo7 from '../portfolio/Assets/bootstrap.jpeg';
 
-const logos = [logo1, logo2, logo3, logo4, logo5, logo6, logo7];
+const logos = [
+  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
+  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
+  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
+  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg",
+];
 
 const floatAnimation = {
   animation: 'float 3s ease-in-out infinite',
@@ -36,8 +41,8 @@ const AboutMeCard = () => {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        px: { xs: 4, md: 16 }, // Increased side padding
-        py: { xs: 4, md: 6 },  // Reduced vertical padding
+        px: { xs: 4, md: 16 },
+        py: { xs: 4, md: 6 },
         fontFamily: `'Georgia', serif`,
         width: '80%',
         color: '#f5f5f5',
@@ -58,12 +63,7 @@ const AboutMeCard = () => {
 
       <Typography
         variant="h4"
-        sx={{
-          fontWeight: 600,
-          mb: 1,
-          textAlign: 'center',
-          color: '#ffffff',
-        }}
+        sx={{ fontWeight: 600, mb: 1, textAlign: 'center', color: '#ffffff' }}
       >
         Hi, I am Soorya Prabha
       </Typography>
@@ -78,50 +78,51 @@ const AboutMeCard = () => {
           textAlign: 'center',
         }}
       >
-        I'm from Tirunelveli and completed a degree in Computer Science Engineering at Thamirabharani Engineering College, with a CGPA of nearly 8/10. 
-        I am skilled in React, CSS, JavaScript, Bootstrap, HTML5, Sass, NodeJS, MongoDB and Material-UI (MUI). I'm in the process of learning the MERN stack, with a current focus on React.
-        <br />
-        My main interest lies in front-end development and UI design, and I’ve applied these skills in my projects. I’m eager to gain practical experience and apply what I’m learning. I am available for work opportunities where I can contribute with my skills and dedication, and I’m committed to delivering my best to complete any task.
+        I am a Junior Developer skilled in React, JavaScript, HTML5, CSS3, Bootstrap, SASS, Node.js, Express, MongoDB, and Material-UI (MUI). I also have hands-on experience with n8n automation, Canvas API, and GitHub Actions.
+
+My main interest lies in Full Stack Development (MERN), and I've applied these skills in my projects like Thozhil Clone Website, Mandala Design App, and Notes-Taking App.
+
+Currently working as a Junior Developer at Technology Analytica Private Limited, where I build full-stack web applications and implement automation workflows.
+
+  <br />
+I'm eager to gain more practical experience and apply what I'm learning. I am available for work opportunities where I can contribute with my skills and dedication, and I'm committed to delivering my best to complete any task.
       </Typography>
 
-     
-        <Box
-  sx={{
-    display: 'flex',
-    justifyContent: 'center',
-    gap: 3,
-    mt: 4,
-    flexWrap: 'wrap',
-  }}
->
-  {logos.map((logo, index) => (
-    <Box
-      key={index}
-      sx={{
-        width: 56,
-        height: 58,
-        ...floatAnimation,
-        animationDelay: `${index * 0.15}s`,
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-      }}
-    >
-      <img
-        src={logo}
-        alt={`Logo ${index + 1}`}
-        style={{
-          width: '100%',
-          height: '100%',
-          objectFit: 'contain',   // Preserve transparency and shape
-          filter: 'none',         // No grayscale
+      <Box
+        sx={{
+          display: 'flex',
+          justifyContent: 'center',
+          gap: 3,
+          mt: 4,
+          flexWrap: 'wrap',
         }}
-      />
-    </Box>
-  ))}
-</Box>
-
-      
+      >
+        {logos.map((logo, index) => (
+          <Box
+            key={index}
+            sx={{
+              width: 56,
+              height: 58,
+              ...floatAnimation,
+              animationDelay: `${index * 0.15}s`,
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}
+          >
+            <img
+              src={logo}
+              alt={`Logo ${index + 1}`}
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'contain',
+                filter: 'none',
+              }}
+            />
+          </Box>
+        ))}
+      </Box>
     </Box>
   );
 };
