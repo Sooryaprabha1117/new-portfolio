@@ -1,5 +1,5 @@
 import React from 'react';
-import Resume from './portfolio/Assets/Soorya Updated.pdf';
+import Resume from './portfolio/Assets/Soorya Prabha_M.pdf';
 import BackgroundImage from './portfolio/Assets/A12.png';
 import qrcode from "./portfolio/Assets/qrcode.png";
 import "./ResumeP.css";
